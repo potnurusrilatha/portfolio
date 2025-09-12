@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from "react";
+import Link from "next/link";  
 
 type HeaderProps = {
   font: string;
@@ -27,9 +28,9 @@ const Header = ({ font }: HeaderProps) => {
     <header className={`fixed top-0 left-0 w-full flex justify-between items-center px-6 py-4 z-50 transition-colors duration-500 ${isOpen ? 'bg-[#e0b0ff] text-[#272928]' : 'bg-[#272928] text-[#b1b1b1]'}`}>
       
       {/* Logo */}
-      <a href="/" className={`text-3xl font-bold ${font}`}>
+      <Link href="/" className={`text-3xl font-bold ${font}`}>
         Srilatha
-      </a>
+      </Link>
 
       {/* Desktop Menu */}
       <nav className="hidden md:flex gap-12">
