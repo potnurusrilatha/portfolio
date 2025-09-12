@@ -1,7 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin,  FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import Link from "next/link";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -20,7 +22,11 @@ const Hero = () => {
           Srilatha Potnuru
         </h1>
         <p className="text-lg md:text-xl text-gray-200 mb-6">
-       Wide-ranging <span className="underline decoration-green-700 decoration-2 font-semibold">Frontend Developer Student</span> with a strong Computer Science background, specializing in building modern, responsive, and user-friendly web applications.
+          Wide-ranging{" "}
+          <span className="underline decoration-green-700 decoration-2 font-semibold">
+            Frontend Developer Student
+          </span>{" "}
+          with a strong Computer Science background, specializing in building modern, responsive, and user-friendly web applications.
         </p>
 
         {/* Social Icons */}
@@ -37,15 +43,15 @@ const Hero = () => {
             href="https://www.linkedin.com/in/srilatha-potnuru-229b80215/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray transition-colors  text-white duration-300"
+            className="hover:text-gray transition-colors text-white duration-300"
           >
             <FaLinkedin />
           </a>
-           <a
+          <a
             href="https://www.facebook.com/srilatha.potnuru"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray transition-colors  text-white duration-300"
+            className="hover:text-gray transition-colors text-white duration-300"
           >
             <FaFacebook />
           </a>
@@ -53,12 +59,12 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
-          <a href="/"
-          className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
+          <Link
+            href="/"
+            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
           >
-
-          Home
-          </a>
+            Home
+          </Link>
           <a
             href="#projects"
             className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-200 transition-colors duration-300"
@@ -77,10 +83,12 @@ const Hero = () => {
           >
             Resume
           </a>
-          <a href="contact"
-           className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
+          <Link
+            href="/contact"
+            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
           >
-          Contact</a>
+            Contact
+          </Link>
         </div>
       </motion.div>
 
@@ -92,11 +100,15 @@ const Hero = () => {
         transition={{ duration: 1 }}
       >
         {/* Profile Image */}
-        <img
-          src="/sree.jpg"
-          alt="Profile"
-          className="rounded-full w-64 md:w-80 shadow-lg border-4 border-secondary mb-4"
-        />
+        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full mb-4 shadow-lg border-4 border-secondary overflow-hidden">
+          <Image
+            src="/sree.jpg"
+            alt="Profile"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
 
         {/* Highlighted Text */}
         <motion.div
