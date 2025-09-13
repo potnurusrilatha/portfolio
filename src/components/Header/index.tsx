@@ -13,9 +13,11 @@ const Header = ({ font }: HeaderProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
-    { href: "#about", label: "About me" },
-    { href: "#projects", label: "My Works" },
-    { href: "#contacts", label: "Contacts" },
+    { href: "#home", label:"Home"},
+    { href: "#projects", label: "MyWorks" },
+    { href: "#about", label: "Aboutme" },
+    { href: "#resume", label:"Resume"},
+    { href: "#contact", label: "Contact" },
   ];
 
   useEffect(() => {
@@ -31,7 +33,7 @@ const Header = ({ font }: HeaderProps) => {
       
       {/* Logo */}
       <Link href="/" className={`text-3xl font-bold ${font}`}>
-        Srilatha
+        Srilatha Potnuru
       </Link>
 
       {/* Desktop Menu */}

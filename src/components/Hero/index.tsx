@@ -65,24 +65,24 @@ const Hero = () => {
           >
             Home
           </Link>
-          <a
-            href="#projects"
+          <Link
+            href="/projects"
             className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-200 transition-colors duration-300"
           >
             My Works
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            href="/aboutme"
             className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
           >
             About Me
-          </a>
-          <a
-            href="#resume"
+          </Link>
+          <Link
+            href="/resume"
             className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
           >
             Resume
-          </a>
+          </Link>
           <Link
             href="/contact"
             className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"

@@ -8,6 +8,7 @@ export default function Home() {
      
       <main className="pt-100">
         <Hero />
+        
       </main>
       {/* <Footer /> */}
     </div>
