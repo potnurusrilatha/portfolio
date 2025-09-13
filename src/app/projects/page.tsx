@@ -21,7 +21,7 @@ const ProjectsPage = () => {
         transition={{ duration: 1 }}
         className="w-full max-w-6xl text-center"
       >
-        <h1 className="text-4xl font-bold text-white mb-10">My Projects</h1>
+        <h1 className="text-4xl font-bold text-white mb-10">My Works</h1>
         <p className="text-lg text-gray-200 mb-10">As a student at Future Games, all my projects are a reflection of my educational journey, each a work in progress awaiting review and improvement in alignment with my evolving skills.While some projects are still unfinished, I am dedicated to completing them. Therefore, you may notice that certain websites are only available on desktops as I work towards their completion and optimization.</p>
         <p className="text-lg text-gray-200 font-bold underline decoration-green-400 decoration-2 mb-10">
           Swipe through some of my projects 👇
