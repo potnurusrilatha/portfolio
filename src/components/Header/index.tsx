@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 type HeaderProps = {
-  font: string;
+  font?: { variable: string }; // Accept Next.js font object
 };
 
 const Header = ({ font }: HeaderProps) => {
@@ -21,44 +21,46 @@ const Header = ({ font }: HeaderProps) => {
   ];
 
   useEffect(() => {
-    if (isOpen) {
-      document.documentElement.style.overflow = "hidden";
-    } else {
-      document.documentElement.style.overflow = "auto";
-    }
+    document.documentElement.style.overflow = isOpen ? "hidden" : "auto";
   }, [isOpen]);
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full flex justify-between items-center px-36 py-4 z-50 transition-colors duration-500 ${
-        isOpen
-          ? "bg-[#e0b0ff] text-[#272928]"
-          : "bg-[#272928] text-[#b1b1b1]"
+      className={`fixed top-0 left-0 w-full flex justify-between items-center px-42 py-4 z-50 transition-colors duration-500 ${
+        isOpen ? "bg-[#e0b0ff] text-[#272928]" : "bg-[#272928] text-[#b1b1b1]"
       }`}
     >
-      {/* Logo / Website Title */}
-     <Link href="/" className="inline-flex flex-col font-bold cursor-pointer relative">
-  <span className="text-3xl md:text-4xl text-white">
-    Srilatha Potnuru<span >
-      <span className="absolute right-0 -bottom-5 text-green-400 text-sm md:text-base font-medium tracking-wide">
+ <Link
+  href="/"
+  className={`flex flex-col cursor-pointer ${font?.variable || ""} ml-4`}
+>
+  <div className="flex items-baseline gap-1 relative">
+    <span className="text-3xl md:text-4xl text-white font-bold">
+      Srilatha
+    </span>
+    <span className="text-3xl md:text-4xl text-white font-bold relative">
+      Potnuru
+      <span className="absolute right-0 -bottom-5 text-green-400 text-xl md:text-lg  font-medium tracking-wide">
         Portfolio
       </span>
     </span>
-  </span>
+  </div>
 </Link>
 
 
+
+
       {/* Desktop Menu */}
-      <nav className="hidden md:flex gap-12 pr-16">
+      <nav className="hidden md:flex gap-12 mr-4">
         {links.map((link, idx) => (
           <Link
             key={idx}
             href={link.href}
-            className={`relative font-semibold transition-colors duration-300 ${
+            className={`relative font-semibold transition-all duration-300 ${
               pathname === link.href
-              ? "text-[#22c55e] custom-glow" // active
-              : "hover:text-[#22c55e] hover:custom-glow" // hover
-          }`}
+                ? "text-[#22c55e] drop-shadow-[0_0_12px_#22c55e]"
+                : "hover:text-[#22c55e] hover:drop-shadow-[0_0_8px_#22c55e] hover:drop-shadow-[0_0_12px_#facc15]"
+            }`}
           >
             {link.label}
           </Link>
@@ -67,24 +69,24 @@ const Header = ({ font }: HeaderProps) => {
 
       {/* Mobile Hamburger */}
       <div
-        className="md:hidden flex flex-col justify-between w-6 h-6 cursor-pointer"
+        className="md:hidden flex flex-col justify-between w-6 h-6 cursor-pointer mr-4"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span
           className={`h-0.5 w-full bg-current transition-transform duration-300 ${
             isOpen ? "rotate-45 translate-y-2" : ""
           }`}
-        ></span>
+        />
         <span
           className={`h-0.5 w-full bg-current transition-opacity duration-300 ${
             isOpen ? "opacity-0" : "opacity-100"
           }`}
-        ></span>
+        />
         <span
           className={`h-0.5 w-full bg-current transition-transform duration-300 ${
             isOpen ? "-rotate-45 -translate-y-2" : ""
           }`}
-        ></span>
+        />
       </div>
 
       {/* Mobile Menu */}
