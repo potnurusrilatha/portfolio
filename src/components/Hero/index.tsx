@@ -61,31 +61,31 @@ const Hero = () => {
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
           <Link
             href="/"
-            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
+            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-400 transition-colors duration-300"
           >
             Home
           </Link>
           <Link
             href="/projects"
-            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-200 transition-colors duration-300"
+            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-400 transition-colors duration-300"
           >
             My Works
           </Link>
           <Link
-            href="/aboutme"
-            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
+            href="/about"
+            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-400 transition-colors duration-300"
           >
             About Me
           </Link>
           <Link
             href="/resume"
-            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
+            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-400 transition-colors duration-300"
           >
             Resume
           </Link>
           <Link
             href="/contact"
-            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-primary transition-colors duration-300"
+            className="bg-blue-200 text-black px-6 py-3 rounded-lg font-semibold hover:bg-green-400 transition-colors duration-300"
           >
             Contact
           </Link>

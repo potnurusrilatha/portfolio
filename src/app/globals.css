@@ -10,3 +10,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+.custom-glow {
+  text-shadow:
+    0 0 4px #22c55e,
+    0 0 8px #facc15,
+    0 0 12px #22c55e;
+}
