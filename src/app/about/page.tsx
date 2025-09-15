@@ -39,7 +39,7 @@ const AboutPage = () => {
               Frontend Developer
             </h2>
             <p className="text-lg text-gray-200 leading-relaxed mb-4">
-              I'm passionate about crafting engaging user experiences and turning innovative ideas into reality through code.
+              I am passionate about crafting engaging user experiences and turning innovative ideas into reality through code.
             </p>
             <p className="text-lg text-gray-200 mb-4 leading-relaxed">
               My journey into web development has been fueled by curiosity and creativity. I love turning ideas into functional digital products and continuously learning new tools, frameworks, and best practices.
