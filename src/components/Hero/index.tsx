@@ -30,7 +30,7 @@ const Hero = () => {
         </p>
 
          <p className="text-lg md:text-xl text-gray-200  mb-6">
-          Seeking a 5-Month Internship (Jan–May 2026). I'm looking for an exciting opportunity and iam ready to start as early as needed. Explore my projects, learn more about me, or get in touch — I’d love to connect!
+          Seeking a 5-Month Internship (Jan–May 2026). Iam looking for an exciting opportunity and  ready to start as early as needed. Explore my projects, learn more about me, or get in touch — I’d love to connect!
         </p>
 
         {/* Social Icons */}
