@@ -29,6 +29,10 @@ const Hero = () => {
           with a strong Computer Science background, specializing in building modern, responsive, and user-friendly web applications.
         </p>
 
+         <p className="text-lg md:text-xl text-gray-200  mb-6">
+          Seeking a 5-Month Internship (Jan–May 2026). I'm looking for an exciting opportunity and iam ready to start as early as needed. Explore my projects, learn more about me, or get in touch — I’d love to connect!
+        </p>
+
         {/* Social Icons */}
         <div className="flex justify-center md:justify-start items-center space-x-6 mb-6 text-2xl text-green-800">
           <a
