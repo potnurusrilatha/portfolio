@@ -39,13 +39,13 @@ const AboutPage = () => {
               Frontend Developer
             </h2>
             <p className="text-lg text-gray-200 leading-relaxed mb-4">
-              I am passionate about crafting engaging user experiences and turning innovative ideas into reality through code.
+              Iam passionate about crafting engaging user experiences and turning innovative ideas into reality through code.
             </p>
             <p className="text-lg text-gray-200 mb-4 leading-relaxed">
               My journey into web development has been fueled by curiosity and creativity. I love turning ideas into functional digital products and continuously learning new tools, frameworks, and best practices.
             </p>
             <p className="text-lg text-gray-200 mb-6 leading-relaxed">
-              Beyond coding, I enjoy solving problems, collaborating in teams, and contributing to projects that make a difference. I'm currently looking for opportunities like <span className="font-semibold text-yellow-400">LIA (Internship)</span> where I can apply my skills and grow as a developer.
+              Beyond coding, I enjoy solving problems, collaborating in teams, and contributing to projects that make a difference. Iam currently looking for opportunities like <span className="font-semibold text-yellow-400">LIA (Internship)</span> where I can apply my skills and grow as a developer.
             </p>
 
             {/* Strengths */}
@@ -91,7 +91,7 @@ const AboutPage = () => {
 
             {/* Closing Paragraph */}
             <p className="text-lg text-gray-200 mb-6 mt-6 leading-relaxed">
-              Exploring the great outdoors fuels my creativity and inspires my work. As I look to the future, I'm excited about opportunities where I can apply my skills, contribute to meaningful projects, and continue growing as a developer.
+              Exploring the great outdoors fuels my creativity and inspires my work. As I look to the future, Iam excited about opportunities where I can apply my skills, contribute to meaningful projects, and continue growing as a developer.
             </p>
 
             {/* Interests */}
