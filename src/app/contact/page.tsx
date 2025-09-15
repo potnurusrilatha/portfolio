@@ -20,7 +20,7 @@ const ContactPage = () => {
 
         {/* Intro */}
         <p className="text-gray-300 text-center">
-          Iam always open to discussing new projects, creative ideas, or opportunities to collaborate. Let's connect!
+          Iam always open to discussing new projects, creative ideas, or opportunities to collaborate. Lets connect!
         </p>
 
         {/* 4 Blocks Contact Info */}
