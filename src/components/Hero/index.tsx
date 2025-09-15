@@ -35,7 +35,7 @@ const Hero = () => {
             href="https://github.com/potnurusrilatha"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary text-green-400 transition-colors duration-300"
+            className="hover:text-gray text-white transition-colors duration-300"
           >
             <FaGithub />
           </a>
@@ -100,7 +100,7 @@ const Hero = () => {
         transition={{ duration: 1 }}
       >
         {/* Profile Image */}
-        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full mb-4 shadow-lg border-4 border-secondary overflow-hidden">
+        <div className="relative w-64 h-54 md:w-80 md:h-80 rounded-full mb-4 shadow-lg border-4 border-secondary overflow-hidden">
           <Image
             src="/sree.jpg"
             alt="Profile"
