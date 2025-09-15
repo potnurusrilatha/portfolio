@@ -59,7 +59,7 @@ const Resume = () => {
               <h3 className="text-xl font-semibold text-white">
                 Master of Technology in Computer Science
               </h3>
-              <p className="text-gray-300">JNT University | 2015</p>
+              <p className="text-gray-300">JNT University | 2014</p>
               <p className="text-gray-400 text-sm">
                 Strong foundation in programming, algorithms, and databases.
               </p>

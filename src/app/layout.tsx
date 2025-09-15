@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Srilatha Potnuru | Portfolio",
-  description: "Portfolio of Srilatha Potnuru, a passionate web developer.",
+  description: "Portfolio website showcasing my projects, skills, resume and contact information.",
   icons: {
-    icon: "/favicon.ico", // default favicon
-    shortcut: "/favicon.png", // optional
-    apple: "/apple-touch-icon.png", // iOS devices
+    icon: "/favicon.ico", 
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -31,6 +31,12 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900`}
+        style={{
+          backgroundImage: "url('/bg-pattern.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed", 
+        }}
       >
         {children}
       </body>

@@ -10,6 +10,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectsPage = () => {
   return (
@@ -75,6 +76,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Link Button */}
+                 <div className="flex flex-wrap gap-2 justify-center mb-4">
                 <Link
                   href={project.link}
                   target="_blank"
@@ -82,6 +84,18 @@ const ProjectsPage = () => {
                 >
                   View Project
                 </Link>
+
+                {project.github && (
+                <Link
+                  href={project.github}
+                  target="_blank"
+                  className="bg-gray-700 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-600 transition-colors flex items-center gap-2"
+                >
+                <FaGithub /> 
+              </Link>
+                )}
+              </div>
+
               </motion.div>
             </SwiperSlide>
           ))}
